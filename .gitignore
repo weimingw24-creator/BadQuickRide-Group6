@@ -1,0 +1,11 @@
+# Build and Environment Exclusions
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.user
+*.cache
+*.log
