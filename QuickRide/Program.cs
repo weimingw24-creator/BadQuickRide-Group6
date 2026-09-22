@@ -18,8 +18,8 @@ namespace QuickRide
             double fare = CalculateFare(distanceKm, true);
             Console.WriteLine($"Rider {riderName} requested ride. Distance: {distanceKm}km. Fare: ${fare:F2}");
 
-            // Procedural, non-deterministic driver matching
-            string driver = MatchDriver();
+            var dispatchService = new DispatchService(new SystemRandom());
+            string driver = dispatchService.MatchDriver();
             Console.WriteLine($"Driver {driver} assigned to {riderName}.");
         }
 
@@ -39,10 +39,7 @@ namespace QuickRide
 
         public static string MatchDriver()
         {
-            string[] drivers = { "Alex (Prius)", "Sam (Civic)", "Taylor (Corolla)" };
-            Random rnd = new Random();
-            int idx = rnd.Next(0, drivers.Length);
-            return drivers[idx];
+            return new DispatchService(new SystemRandom()).MatchDriver();
         }
     }
 }

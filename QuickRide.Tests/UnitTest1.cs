@@ -3,7 +3,7 @@ using QuickRide;
 
 namespace QuickRide.Tests
 {
-    public class SampleUnitTest
+    public class UnitTest1
     {
         [Fact]
         public void CalculateFare_StandardDistance_ReturnsCorrectTotal()
