@@ -11,7 +11,7 @@ namespace QuickRide
             "Developer 1: [Insert Name] - Role: Domain Entities",
             "Developer 2: [Insert Name] - Role: Dispatch Service",
             "Developer 3: [Insert Name] - Role: Billing Service",
-            "Developer 4: [Insert Name] - Role: Unit Test Suite",
+            "Developer 4: Quadri Bashiru Kolawole - Student ID: 9082146 - Role: AAA Unit Test Suite",
             "Developer 5: [Insert Name] - Role: UI Abstraction (Optional)"
         };
 
